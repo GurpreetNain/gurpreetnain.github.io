@@ -1,7 +1,5 @@
-import "./App.css";
+import "./App.scss";
 
-function App() {
-  return <div>Coming Soon...</div>;
-}
+let App = () => <div></div>;
 
 export default App;
