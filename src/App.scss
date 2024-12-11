@@ -1,0 +1,50 @@
+@import './styles/mixins';
+
+.app {
+  background-color: var(--background-color);
+  color: var(--primary-color);
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+// Global styles
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 600;
+}
+
+section {
+  margin: 1rem 0;
+}
+
+// Dark theme variables
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #8b8b8b;
+  --background-color: #1a1f2b;
+  --card-background: #1a1f2b;
+  --accent-color: #f6f6f6;
+  --box-shadow: 12px 12px 24px #151922,
+    -12px -12px 24px #1f2534;
+}
+
+.light-mode {
+  --primary-color: #000000;
+  --secondary-color: #4a4a4a;
+  --background-color: #e0e0e0;
+  --card-background: #e0e0e0;
+  --accent-color: #252934;
+  --box-shadow: 12px 12px 30px #d3d3d3, -12px -12px 30px #ededed;
+}
