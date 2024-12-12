@@ -13,14 +13,14 @@ const Skills = () => {
       <h2>Skills</h2>
       <div className="skills-container">
         {Object.entries(skillCategories).map(([category, skills]) => (
-          <div key={category} className="skill-category">
-            <h3>{category}</h3>
+          <>
+            <h3>{category}:</h3>
             <div className="skill-list">
               {skills.map(skill => (
                 <span key={skill} className="skill-tag">{skill}</span>
               ))}
             </div>
-          </div>
+          </>
         ))}
       </div>
     </section>

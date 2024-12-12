@@ -12,7 +12,11 @@ const Navbar = ({ toggleTheme, isLightMode }) => {
         <li><a href="#contact">Contact Me</a></li>
         <li>
           <button onClick={toggleTheme} className="theme-toggle">
-            {isLightMode ? 'Dark Mode' : 'Light Mode'}
+            {isLightMode ? (
+              <img src={'moon.svg'} alt="Dark Mode" />
+            ) : (
+              <img src={'sun.svg'} alt="Light Mode" />
+            )}
           </button>
         </li>
       </ul>

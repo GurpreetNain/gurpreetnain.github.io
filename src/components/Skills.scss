@@ -10,38 +10,30 @@
   }
 
   &-container {
-    @include flex-container(flex-start, flex-start, row);
-    flex-wrap: wrap;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr;
     gap: 2rem;
   }
 
-  .skill-category {
-    gap: 1rem;
-    @include flex-container(center, center, row);
-    @include neumorphism();
-    padding: 1rem;
-    border-radius: 8px;
-
-    h3 {
-      color: var(--primary-color);
-      //margin-bottom: 1rem;
-      margin: 0;
-      font-size: 1.2rem;
-    }
-
-    .skill-list {
-      flex-wrap: wrap;
-      @include flex-container(center, center, row);
-      gap: 0.8rem;
-    }
-
-    .skill-tag {
-      background-color: rgba(100, 255, 218, 0.1);
-      color: var(--accent-color);
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
-      font-size: 0.9rem;
-      @include neumorphism();
-    }
+  h3 {
+    color: var(--primary-color);
+    margin: 0;
+    font-size: 1.2rem;
   }
-} 
+
+  .skill-list {
+    flex-wrap: wrap;
+    @include flex-container(flex-start, center, row);
+    gap: 0.8rem;
+  }
+
+  .skill-tag {
+    color: var(--accent-color);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    @include neumorphism();
+  }
+
+}

@@ -8,6 +8,10 @@
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+* {
+  transition: background-color 0.02s linear, color 0.02s linear;
+}
+
 .main-content {
   max-width: 1200px;
   margin: 0 auto;

@@ -20,6 +20,8 @@
     transition: max-height 0.3s ease;
 
     li a {
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
       color: var(--primary-color);
       text-decoration: none;
       font-size: 1rem;
@@ -27,6 +29,7 @@
 
       &:hover {
         color: var(--accent-color);
+        @include neumorphism();
       }
     }
   }
@@ -36,9 +39,13 @@
   background: none;
   border: none;
   color: var(--primary-color);
-  font-size: 1rem;
   cursor: pointer;
   transition: color 0.3s ease;
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
 
   &:hover {
     color: var(--accent-color);
